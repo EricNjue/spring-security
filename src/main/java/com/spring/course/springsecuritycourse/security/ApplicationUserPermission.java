@@ -1,10 +1,10 @@
 package com.spring.course.springsecuritycourse.security;
 
 public enum ApplicationUserPermission {
-    STUDENT_READ("STUDENT:READ"),
-    STUDENT_WRITE("STUDENT:WRITE"),
-    COURSE_READ("COURSE:READ"),
-    COURSE_WRITE("COURSE:WRITE");
+    STUDENT_READ("STUDENT:READ".toLowerCase()),
+    STUDENT_WRITE("STUDENT:WRITE".toLowerCase()),
+    COURSE_READ("COURSE:READ".toLowerCase()),
+    COURSE_WRITE("COURSE:WRITE".toLowerCase());
 
     private final String permission;
 
