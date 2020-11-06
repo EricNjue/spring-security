@@ -3,4 +3,25 @@ GET http://localhost:8089/api/v1/students/{{studentId}}
 Accept: application/json
 Authorization: Basic {{username}} {{password}}
 
-###
+### Management Get Students
+GET http://localhost:8089/management/api/v1/students
+Accept: application/json
+Authorization: Basic {{username}} {{password}}
+
+### Management Post Student
+POST http://localhost:8089/management/api/v1/students
+Content-Type: application/json
+
+{
+  "studentId": 2222,
+  "studentName": "Joe Biden"
+}
+
+### Management Put Student
+PUT http://localhost:8089/management/api/v1/students/2222
+Content-Type: application/json
+
+{
+  "studentId": 2222,
+  "studentName": "Joe Biden"
+}
